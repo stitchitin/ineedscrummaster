@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.head-section{
+    width: 100%;
+    height: 100vh;
+}
+#img-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgba(28, 10, 228, 0.78) 12.34%, #E40A3F 108.88%), url(/womanon.jpg);
+    padding-left: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.texts h1{
+    color: white;
+    font-weight: 700;
+    padding-left: 100px;
+}
+.form-p{
+    text-align: center;
+    color: black;
+}
+.join{
+    text-align: center;
+    color: rgb(9, 9, 131);
+    font-weight: 700;
+}
+#form-side{
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    padding: 0 100px;
+    padding-top: 40px;
+}
+.sign-row{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#input-field{
+    margin-top: 15px;
+    color: black;
+}
+.submit-btn{
+    border: none;
+    background-color: rgb(28, 90, 224);
+    color: white;
+    padding: 6px 80px;
+    border-radius: 10px;
+}
+.form-check{
+    margin-left: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: black;
+}
+.centered-btns{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+.google-signin{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 1px 6px;
+}
+.google-facebook{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+.fa-google{
+    color: green;
+}
+.fa-facebook{
+    color: blue;
+}
+.already-signed{
+    padding-top: 15px;
+}
+.form-control{
+    height: 7vh;
+}
+.go-down{
+    margin-top: 45px;
+}
+.forgotpass{
+    color: blue;
+}
+
+
+@media (max-width: 1166px) {
+    .texts h1{
+        padding-left: 50px;
+    }
+}
+@media (max-width: 991px) {
+    #img-side{
+        display: none;
+    }
+    #form-side{
+        padding: 70px 20px;
+    }
+}
+@media (max-width: 470px) {
+    .google-facebook{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .submit-btn{
+        padding: 7px 70px;
+    }
+}
+@media (max-width: 576px) {
+    #emaill{
+        width: 270px;
+    }
+}
