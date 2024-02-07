@@ -18,9 +18,9 @@ function Register() {
         event.preventDefault();
     
         try {
-          const response = await fetch('https://ineedscrummaster.org/ineeds/add_user.php', {
+          const response = await fetch('/ineeds/add_user.php', {
             method: 'POST',
-            header s: {
+            header: {
               'Content-Type': 'application/json',
             },
             body: JSON.stringify(formData),
